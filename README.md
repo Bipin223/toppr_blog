@@ -108,7 +108,7 @@ To add new study materials:
 ## ✨ Contributors
 
 - Bipin (Project Lead)
-- [Add other team members]
+- Utsav Tamang, Sanam Shrestha and Bishwash shahi Thakuri as helpers!
 
 ## 📄 License
 
@@ -123,9 +123,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 For any queries or suggestions:
-- Email: [Your Email]
-- Website: [Your Website]
-- GitHub: [Your GitHub Profile]
+- Email: bipinrijal24@gmail.com
+- Website: <not yet>
+- GitHub: bipin223
 
 ---
 Made with ❤️ by Bipin and team 
