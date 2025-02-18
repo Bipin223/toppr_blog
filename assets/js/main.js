@@ -39,7 +39,7 @@ const semesterSubjects = {
         { name: 'English II', materials: ['notes', 'assignments', 'mcqs'] },
         { name: 'Mathematics II', materials: ['notes', 'assignments', 'mcqs'] },
         { name: 'C Programming', materials: ['notes', 'lab-reports', 'assignments', 'mcqs'] },
-        { name: 'Web Technology', materials: ['notes', 'lab-reports', 'assignments', 'mcqs'] }
+        { name: 'Microprocessor Architecture', materials: ['notes', 'lab-reports', 'assignments', 'mcqs'] }
     ],
     3: [
         { name: 'Data Structures & Algorithms', materials: ['notes', 'lab-reports', 'assignments', 'mcqs'] },
