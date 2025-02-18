@@ -46,7 +46,7 @@ const semesterSubjects = {
         { name: 'Probability & Statistics', materials: ['notes', 'assignments', 'mcqs'] },
         { name: 'System Analysis & Design', materials: ['notes', 'assignments', 'mcqs'] },
         { name: 'OOP in Java', materials: ['notes', 'lab-reports', 'assignments', 'mcqs'] },
-        { name: 'Management Information System', materials: ['notes', 'assignments', 'mcqs'] }
+        { name: 'Web Technology', materials: ['notes', 'assignments', 'mcqs'] }
     ],
     4: [
         { name: 'Operating System', materials: ['notes', 'lab-reports', 'assignments', 'mcqs'] },
