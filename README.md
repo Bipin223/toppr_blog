@@ -61,7 +61,7 @@ toppernotes/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/toppernotes.git
+   git clone https://github.com/bipin223/toppernotes.git
    ```
 
 2. Navigate to the project directory:
