@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topper Notes - BCA TU Study Materials</title>
+    <title>Semester Subjects - Topper Notes</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,15 +14,15 @@
         <div class="nav-container">
             <div class="nav-left">
                 <img src="assets/images/logo.png" alt="Logo" class="logo">
-                <a href="#" class="website-name">Topper Notes</a>
+                <a href="index.html" class="website-name">Topper Notes</a>
             </div>
             <div class="nav-right">
+                <a href="index.html" class="nav-link">Home</a>
                 <a href="#" class="nav-link active">Notes</a>
                 <a href="#" class="nav-link">Notices</a>
                 <a href="#" class="nav-link">Syllabus</a>
                 <a href="#" class="nav-link">MCQs</a>
                 <a href="#" class="nav-link">Question Models</a>
-                <a href="#" class="nav-link">Find Notes</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -32,109 +32,59 @@
 
     <!-- Header -->
     <header class="gradient-animate">
-        <h1>Topper Notes</h1>
-        <p class="subtitle">A simple BCA notes website to help you study better >_< </p>
+        <h1>BCA Subjects</h1>
+        <p class="subtitle">Explore subjects semester-wise</p>
         <div class="search-container">
-            <input type="text" class="search-bar" placeholder="Search for notes, subjects, or materials...">
+            <input type="text" class="search-bar" placeholder="Search for subjects or topics...">
         </div>
     </header>
 
     <main>
         <section class="semester-tabs">
-            <a href="subjects.html" class="tab">
+            <div class="tab active" data-semester="1">
                 <i class="fas fa-book-open"></i>
                 <h3>First Semester</h3>
                 <p>Foundation courses and basics</p>
-            </a>
-            <a href="subjects.html" class="tab">
+            </div>
+            <div class="tab" data-semester="2">
                 <i class="fas fa-laptop-code"></i>
                 <h3>Second Semester</h3>
                 <p>Programming fundamentals</p>
-            </a>
-            <a href="subjects.html" class="tab">
+            </div>
+            <div class="tab" data-semester="3">
                 <i class="fas fa-database"></i>
                 <h3>Third Semester</h3>
                 <p>Data structures & OOP</p>
-            </a>
-            <a href="subjects.html" class="tab">
+            </div>
+            <div class="tab" data-semester="4">
                 <i class="fas fa-network-wired"></i>
                 <h3>Fourth Semester</h3>
                 <p>OS and networking</p>
-            </a>
-            <a href="subjects.html" class="tab">
+            </div>
+            <div class="tab" data-semester="5">
                 <i class="fas fa-code-branch"></i>
                 <h3>Fifth Semester</h3>
                 <p>Advanced programming</p>
-            </a>
-            <a href="subjects.html" class="tab">
+            </div>
+            <div class="tab" data-semester="6">
                 <i class="fas fa-mobile-alt"></i>
                 <h3>Sixth Semester</h3>
                 <p>Mobile and web development</p>
-            </a>
-            <a href="subjects.html" class="tab">
+            </div>
+            <div class="tab" data-semester="7">
                 <i class="fas fa-shield-alt"></i>
                 <h3>Seventh Semester</h3>
                 <p>Security and advanced topics</p>
-            </a>
-            <a href="subjects.html" class="tab">
+            </div>
+            <div class="tab" data-semester="8">
                 <i class="fas fa-graduation-cap"></i>
                 <h3>Eighth Semester</h3>
                 <p>Project work and internship</p>
-            </a>
-        </section>
-
-        <section id="about" class="about-us">
-            <div class="about-header">
-                <h2>About Us</h2>
-                <div class="scroll-indicator">
-                    <span class="scroll-text">Scroll Down</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
-
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead-text">Welcome to Topper Notes, your comprehensive resource for BCA study materials.</p>
-                    <p class="description">We are a team of passionate BCA students working together to create a comprehensive resource hub for fellow students. Our platform is designed to help BCA students access quality study materials and resources with ease.</p>
-                </div>
-            </div>
-
-            <div class="projects-section">
-                <h3>What We Offer</h3>
-                <div class="project-cards">
-                    <div class="project-card floating">
-                        <i class="fas fa-book-reader"></i>
-                        <h4>Study Materials</h4>
-                        <p>Comprehensive notes and resources for all BCA semesters</p>
-                    </div>
-                    <div class="project-card floating">
-                        <i class="fas fa-tasks"></i>
-                        <h4>Practice Questions</h4>
-                        <p>MCQs and model questions for better preparation</p>
-                    </div>
-                    <div class="project-card floating">
-                        <i class="fas fa-users"></i>
-                        <h4>Community</h4>
-                        <p>Connect with fellow students and share experiences</p>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <section class="contributors gradient-animate">
-            <h2>In a collaboration with:</h2>
-            <div class="contributors-grid main-contributors">
-                <div class="contributor">
-                    <img src="assets/images/bipin.jpg" alt="Bipin" class="floating">
-                    <h3>Bipin</h3>
-                    <p>BCA Student</p>
-                </div>
-                <div class="contributor">
-                    <img src="assets/images/utsav.jpg" alt="Utsav" class="floating">
-                    <h3>Utsav</h3>
-                    <p>BCA Student</p>
-                </div>
-            </div>
+        <section class="content-area">
+            <!-- Dynamic content will be loaded here -->
         </section>
     </main>
 
@@ -145,8 +95,8 @@
                 <h2>🍁 Topper Notes 🍁</h2>
             </div>
             <nav class="footer-nav">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
                 <a href="#">Contact</a>
             </nav>
             <div class="social-links">
@@ -171,4 +121,4 @@
 
     <script src="assets/js/main.js"></script>
 </body>
-</html>
+</html> 

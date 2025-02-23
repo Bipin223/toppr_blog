@@ -3,21 +3,20 @@ const themeToggle = document.querySelector('.theme-toggle');
 const body = document.body;
 const icon = themeToggle.querySelector('i');
 
-// Check for saved theme preference
-const savedTheme = localStorage.getItem('theme') || 'light';
-body.setAttribute('data-theme', savedTheme);
-updateThemeIcon(savedTheme);
+// Check for saved theme preference or system preference
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+setTheme(savedTheme);
 
 themeToggle.addEventListener('click', () => {
     const currentTheme = body.getAttribute('data-theme');
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-    
-    body.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
+    setTheme(newTheme);
 });
 
-function updateThemeIcon(theme) {
+function setTheme(theme) {
+    body.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
     icon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
 }
 
@@ -177,3 +176,32 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Floating animation with smooth delays
+document.addEventListener('DOMContentLoaded', () => {
+    // Add floating effect to contributor images with smooth delays
+    const contributorImages = document.querySelectorAll('.contributor img');
+    contributorImages.forEach((img, index) => {
+        img.style.animationDelay = `${index * 1}s`;
+    });
+
+    // Add floating effect to project cards with smooth delays
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 1}s`;
+    });
+
+    // Smooth scroll functionality
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+});
